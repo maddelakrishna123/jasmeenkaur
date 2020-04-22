@@ -2268,3 +2268,69 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 22:38:21.871
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.wxMntryY => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:25.522
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:25.532
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@81ac569[org.springframework.tooling.boot.ls:1.15.0.202003180840(id=1016)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:25.544
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.545
+!MESSAGE Boot LS startup time from start to initialized: 5991ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.608
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.uuOnmngSisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.622
+!MESSAGE Sorting projects...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.635
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.646
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.658
+!MESSAGE Sorting projects... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.674
+!MESSAGE inside synchronized Subscriptions
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.734
+!MESSAGE subscribing to classpath changes: sts4.classpath.uuOnmngS isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.750
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.759
+!MESSAGE subsribers = {sts4.classpath.uuOnmngS=Send Classpath Notifications(1938)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.765
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.773
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.782
+!MESSAGE Preparing classpath changed notification core
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.792
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.uuOnmngS => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.802
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.812
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.820
+!MESSAGE buffering callback sts4.classpath.uuOnmngS core false 19
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.831
+!MESSAGE executing callback sts4.classpath.uuOnmngS 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-04-22 23:25:31.864
+!MESSAGE executing callback sts4.classpath.uuOnmngS SUCCESS [done]
