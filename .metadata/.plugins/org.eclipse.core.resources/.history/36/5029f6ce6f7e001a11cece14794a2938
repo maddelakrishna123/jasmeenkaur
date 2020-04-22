@@ -1,0 +1,23 @@
+package dt07042020;
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class SetExample {
+	
+	public static void main(String[] args) {
+		
+		//Set  is not having any special methods
+		Set<Integer>  set = new LinkedHashSet<Integer>();
+		set.add(40);
+		set.add(10);
+		set.add(30);
+		set.add(10);
+		
+		
+		System.out.println(set);
+		
+	}
+
+}

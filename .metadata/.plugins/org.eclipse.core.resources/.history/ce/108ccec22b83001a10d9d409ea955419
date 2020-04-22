@@ -1,0 +1,66 @@
+package dt20042020;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+import dt07042020.NumberComparator;
+
+public class MapExample1 {
+	
+	public static void main(String[] args) {
+		
+		HashMap<Integer, String> map = new HashMap<Integer, String>();
+
+		map.put(1010, "raj");
+		map.put(1000, "bhanu");
+		map.put(900, "aravind");
+		map.put(3020, "ramesh");
+		map.put(2020, "upendra");
+		map.put(2030, "Hemanth");
+
+		System.out.println(map);
+		
+		TreeMap<Integer, String> treemap = new TreeMap<Integer, String>(new NumberComparator());
+		treemap.putAll(map);
+		System.out.println(treemap);
+		
+		
+		
+		/*
+		 * 1. entry set
+		 * 2.convert entryset into array list
+		 * 3.define customizes comparator
+		 * 4.Sort the array List
+		 */
+		
+		
+		/*
+		 * Set<Map.Entry<Integer, String>> entryset = map.entrySet();
+		 * 
+		 * 
+		 * ArrayList<Map.Entry<Integer, String>> mapList = new
+		 * ArrayList<Map.Entry<Integer, String>>(entryset);
+		 * 
+		 * mapList.sort(new MapValueComparator());
+		 * 
+		 * LinkedHashMap<Integer, String> sortedMap = new LinkedHashMap<Integer,
+		 * String>();
+		 * 
+		 * 
+		 * mapList.forEach(t-> sortedMap.put(t.getKey(), t.getValue()));
+		 * 
+		 * System.out.println(sortedMap);
+		 */
+		LinkedHashMap<Integer, String> sortedMap = new LinkedHashMap<Integer, String>();
+		
+		map.entrySet().stream().sorted(Map.Entry.comparingByValue())).forEach(t->sortedMap.put(t.getKey(), t.getValue()));
+		System.out.println(sortedMap);
+		
+	}
+
+}

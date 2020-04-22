@@ -1,0 +1,25 @@
+package dt22042020;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class SerialozationDemo {
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+
+		 Employee emp = new Employee();
+		 emp.setEid(101);
+		 emp.setName("Rakesh");
+		
+		
+
+		 
+		 
+		 FileOutputStream fos = new FileOutputStream(new File("E:\\Online Trainings\\jasmeen kaur\\emp.txt"));
+		 
+		 
+	}
+
+}

@@ -1,0 +1,23 @@
+package dt16042020;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapExample1 {
+
+	public static void main(String[] args) {
+     Map<Integer, String> map = new TreeMap<Integer, String>();
+     map.put(201, "rajesh");
+     map.put(101, "Anand");
+     map.put(401, "Bhupal");
+     map.put(301, "Drupesh");
+     
+     
+     
+     System.out.println(map);
+
+		
+		
+	}
+
+}

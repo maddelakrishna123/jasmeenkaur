@@ -1,0 +1,76 @@
+package dt07042020;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+import dt01042020.Customer;
+
+public class ArrayListExample {
+
+	public static void main(String[] args) {
+
+		
+		
+// Comparable - java.lang - compareTo(Object o) - int
+	List<Integer> list = new ArrayList<Integer>();
+	
+	list.add(20);
+	list.add(13);
+	list.add(12);
+	list.add(20);
+	list.add(10);
+	list.add(21);
+	
+	// sort 
+	NumberComparator nc = new NumberComparator();
+	
+	Collections.sort(list,nc);
+	System.out.println(list);
+	
+	// 12 10   +ve
+	// 10 12   -ve
+	// 12 12  0
+	
+	
+	Customer c1 = new Customer(1, "abc");
+	Customer c2 = new Customer(2, "gbc");
+	Customer c3 = new Customer(3, "dbc");
+	Customer c4= new Customer(4, "fbc");
+	
+	List<Customer> custList = new ArrayList<Customer>();
+	
+	custList.add(c1);
+	custList.add(c3);
+	custList.add(c2);
+	custList.add(c4);
+	
+	Comparator<Customer> cc = new Comparator<Customer>() {
+
+		@Override
+		public int compare(Customer o1, Customer o2) {
+         
+
+			return o1.getName().compareTo(o2.getName());
+		}
+	};
+	
+	
+	Collections.sort(custList);
+	System.out.println(custList);
+	
+	List<String> name = new ArrayList<String>();
+	name.add("bhanu");
+	name.add("anand");
+	name.add("krishna");
+	name.add("jasmeen");
+	
+	
+	Collections.sort(name);
+	System.out.println(name);
+	}
+
+}

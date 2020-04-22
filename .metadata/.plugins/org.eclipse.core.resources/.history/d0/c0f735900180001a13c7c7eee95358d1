@@ -1,0 +1,8 @@
+package dt16042020;
+
+public class Employee {
+	
+	private int id;
+	private String name;
+
+}

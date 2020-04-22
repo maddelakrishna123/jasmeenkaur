@@ -1,0 +1,67 @@
+package dt07042020;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.print.attribute.HashAttributeSet;
+
+public class MapExample {
+
+	public static void main(String[] args) {
+
+
+		/*
+		 *  101=krishna  //entry
+		 *  
+		 *  keys and values are Objects
+		 *  keys can not be duplicated
+		 *  but value can be
+		 *  
+		 *  set of entries
+		 *  
+		 *   Properties
+		 *   
+		 *    Hashtable
+		 *    
+		 *    Map - java.util,
+		 *    HashMap is implemented class
+		 *    LinkedHashMap
+		 *    TreeMap - ordered map
+		 */
+
+		
+		Map<Integer, String>  map = new HashMap<Integer, String>();
+		
+		// Add 
+		
+		map.put(101, "abc"); //
+		map.put(102, "pqr");
+		map.put(103, "str");
+		map.put(101, "sqr");
+		map.put(104, "str");
+
+
+		
+		System.out.println(map);
+		
+		// Retriving
+		
+		System.out.println(map.get(101));
+		
+		// searching
+		
+		  // containsKey(Object key) - boolean 
+		
+		 // containsValue(Object value) - boolean
+		
+		// Deleting
+		
+
+
+		map.remove(101);
+		System.out.println(map);
+		
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package dt20042020;
+
+import java.util.Comparator;
+import java.util.Map;
+
+public class MapValueComparator implements Comparator<Map.Entry<Integr, value>> {
+
+}
